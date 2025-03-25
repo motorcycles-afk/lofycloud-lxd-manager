@@ -13,11 +13,9 @@ intents.dm_messages = True
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-# File to store user-container assignments
 ASSIGNMENTS_FILE = "assigned_containers.json"
 admin_role_id = 1351490436576968845  # Replace with actual Admin role ID
 
-# Load assigned containers from file
 def load_assignments():
     try:
         with open(ASSIGNMENTS_FILE, "r") as file:
